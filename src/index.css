@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Color Palette matching Technical Precision */
+  --color-surface: #f7f9fb;
+  --color-surface-dim: #d8dadc;
+  --color-surface-bright: #f7f9fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e0e3e5;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #464555;
+  --color-inverse-surface: #2d3133;
+  --color-inverse-on-surface: #eff1f3;
+  --color-outline: #777587;
+  --color-outline-variant: #c7c4d8;
+  --color-surface-tint: #0d9488;
+  --color-primary: #0d9488;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #115e59;
+  --color-on-primary-container: #ccfbf1;
+  --color-inverse-primary: #99f6e4;
+  --color-secondary: #545f73;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #d5e0f8;
+  --color-on-secondary-container: #586377;
+  --color-tertiary: #0f766e;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #115e59;
+  --color-on-tertiary-container: #ccfbf1;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ccfbf1;
+  --color-primary-fixed-dim: #99f6e4;
+  --color-on-primary-fixed: #042f2e;
+  --color-on-primary-fixed-variant: #0d9488;
+  --color-secondary-fixed: #d8e3fb;
+  --color-secondary-fixed-dim: #bcc7de;
+  --color-on-secondary-fixed: #111c2d;
+  --color-on-secondary-fixed-variant: #3c475a;
+  --color-tertiary-fixed: #e1e0ff;
+  --color-tertiary-fixed-dim: #c0c1ff;
+  --color-on-tertiary-fixed: #07006c;
+  --color-on-tertiary-fixed-variant: #2f2ebe;
+  --color-background: #f7f9fb;
+  --color-on-background: #191c1e;
+  --color-surface-variant: #e0e3e5;
+
+  /* Custom Border Radii overrides */
+  --radius-sm: 0.25rem;
+  --radius-DEFAULT: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+/* 3D Flipping Utilities for tactile Flashcards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.rotate-y-0 {
+  transform: rotateY(0deg);
+}
+
+/* Custom sleek scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Dark Theme Override variables mapping */
+.dark {
+  --color-surface: #0d1117;
+  --color-surface-dim: #161b22;
+  --color-surface-bright: #0d1117;
+  --color-surface-container-lowest: #090d12;
+  --color-surface-container-low: #151b23;
+  --color-surface-container: #21262d;
+  --color-surface-container-high: #30363d;
+  --color-surface-container-highest: #484f58;
+  --color-on-surface: #c9d1d9;
+  --color-on-surface-variant: #8b949e;
+  --color-inverse-surface: #f0f6fc;
+  --color-inverse-on-surface: #0d1117;
+  --color-outline: #30363d;
+  --color-outline-variant: #21262d;
+  --color-primary: #14b8a6;
+  --color-primary-fixed: #042f2e;
+  --color-primary-fixed-dim: #115e59;
+  --color-on-primary-fixed: #ccfbf1;
+  --color-background: #0d1117;
+  --color-on-background: #c9d1d9;
+  --color-surface-variant: #161b22;
+}
+
+/* Terminal Theme Override variables mapping */
+.theme-terminal {
+  --color-surface: #010201;
+  --color-surface-dim: #030603;
+  --color-surface-bright: #010201;
+  --color-surface-container-lowest: #000000;
+  --color-surface-container-low: #050a05;
+  --color-surface-container: #0c160c;
+  --color-surface-container-high: #152515;
+  --color-surface-container-highest: #223a22;
+  --color-on-surface: #39ff14;
+  --color-on-surface-variant: #2cb810;
+  --color-inverse-surface: #39ff14;
+  --color-inverse-on-surface: #000000;
+  --color-outline: #183e10;
+  --color-outline-variant: #0e240a;
+  --color-primary: #39ff14;
+  --color-primary-fixed: #091a09;
+  --color-primary-fixed-dim: #051005;
+  --color-on-primary-fixed: #39ff14;
+  --color-background: #000000;
+  --color-on-background: #39ff14;
+  --color-surface-variant: #030603;
+}
+
+

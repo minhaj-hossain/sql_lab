@@ -1,0 +1,6 @@
+{
+  "name": "MJ - SQL LAB",
+  "description": "Premium interactive SQL and Oracle PL/SQL learning platform with visual animations, playground, and live execution steps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
